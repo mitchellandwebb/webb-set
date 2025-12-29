@@ -5,11 +5,12 @@
         "path": "./",
         "core": {
           "dependencies": [
-            "control",
-            "ordered-collections",
-            "prelude",
-            "tuples",
-            "webb-array"
+            {
+              "ordered-collections": ">=3.2.0 <4.0.0"
+            },
+            {
+              "prelude": ">=6.0.2 <7.0.0"
+            }
           ],
           "build_plan": [
             "arrays",
@@ -44,8 +45,7 @@
             "tuples",
             "type-equality",
             "unfoldable",
-            "unsafe-coerce",
-            "webb-array"
+            "unsafe-coerce"
           ]
         },
         "test": {
@@ -1725,17 +1725,6 @@
       "version": "6.0.0",
       "integrity": "sha256-IqIYW4Vkevn8sI+6aUwRGvd87tVL36BBeOr0cGAE7t0=",
       "dependencies": []
-    },
-    "webb-array": {
-      "type": "registry",
-      "version": "0.0.1",
-      "integrity": "sha256-DKtrMVsbbewG5bd97qyO8zVPrzTyHISoY2MF3HzVetU=",
-      "dependencies": [
-        "arrays",
-        "foldable-traversable",
-        "maybe",
-        "prelude"
-      ]
     },
     "webb-test": {
       "type": "registry",
