@@ -1,0 +1,30 @@
+package:
+  name: webb-set
+  dependencies:
+    - control
+    - ordered-collections
+    - prelude
+    - tuples
+    - webb-array
+  test:
+    main: Test.Main
+    dependencies:
+      - spec
+      - spec-discovery
+      - spec-node
+      - webb-test
+
+  publish:
+    version: 0.0.1
+    license: BSD-3-Clause
+    location:
+      githubOwner: mitchellandwebb
+      githubRepo: webb-set
+
+workspace:
+  packageSet:
+    registry: 69.3.0
+  extraPackages:
+    spec-discovery: 8.2.0
+    webb-test: 0.0.1
+    webb-array: 0.0.1
